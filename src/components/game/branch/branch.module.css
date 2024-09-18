@@ -1,0 +1,57 @@
+.flowerStatic {
+    animation-name: flowerStatic;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.flowerDrop {
+    animation-name: flowerDrop;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+.flowerEnter {
+    animation-name: flowerEnter;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flowerStatic {
+    0%{
+        rotate: -0deg;
+    }
+    25%{
+        rotate: 5deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    75%{
+        rotate: -5deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+@keyframes flowerEnter {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@keyframes flowerDrop {
+    0%{
+        transform: translate(0, 0);
+    }
+
+    100%{
+        transform: translate(0, 250vh);
+
+    }
+}

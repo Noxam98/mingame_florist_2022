@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Montserrad;
+    src: url("/src/assets/fonts/Montserrat.ttf");
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrad;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
